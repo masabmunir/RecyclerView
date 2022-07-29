@@ -1,14 +1,17 @@
 package com.example.recyclerview.Packages;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.recyclerview.MainActivity;
 import com.example.recyclerview.Models.RecipeModel;
 import com.example.recyclerview.R;
 
@@ -39,6 +42,27 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.viewHolder
 
      holder.imageview.setImageResource(model.getPic());
      holder.textView.setText(model.getText());
+
+//     For Selecting Seperate Image and Text
+//     switch (position){
+//         case 1:
+//             holder.imageview.setOnClickListener(new View.OnClickListener() {
+//                 @Override
+//                 public void onClick(View v) {
+//                     Toast.makeText(context, "Image is selected", Toast.LENGTH_SHORT).show();
+//
+//                 }
+//             });
+//             holder.textView.setOnClickListener(new View.OnClickListener() {
+//                 @Override
+//                 public void onClick(View v) {
+//                     Toast.makeText(context, "Burger is selected", Toast.LENGTH_SHORT).show();
+//                 }
+//             });
+//             break;
+//     }
+
+
     }
 
     @Override
